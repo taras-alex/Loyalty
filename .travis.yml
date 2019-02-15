@@ -13,7 +13,4 @@ script:
 after_success:
   - codecov
 
-# blocklist
-branches:
-  except:
-  - gh-pages
+
