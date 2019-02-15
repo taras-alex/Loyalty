@@ -22,6 +22,7 @@ def Loyalty(amount_of_shopping, amount_of_purchase):
     350
 
     """
+    step = 1000  # The bonus is accrued for complete 1000 rubles
     if amount_of_shopping > 150_000:
         bonus = 100  # gold status 10% of purchase
 
@@ -31,5 +32,5 @@ def Loyalty(amount_of_shopping, amount_of_purchase):
     if amount_of_shopping < 15_000:
         bonus = 50  # blu status 5% of purchase
 
-    result = bonus * (amount_of_purchase // 1000)
+    result = bonus * (amount_of_purchase // step)
     return result
