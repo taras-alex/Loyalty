@@ -18,8 +18,8 @@ def Loyalty(amount_of_shopping, amount_of_purchase):
     >>> Loyalty(5000,0)
     0
 
-    >>> Loyalty(12_000,7800)
-    350
+    >>> Loyalty(16_000,10_000)
+    700
 
     """
     step = 1000  # The bonus is accrued for complete 1000 rubles

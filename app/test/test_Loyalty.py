@@ -12,7 +12,14 @@ def test_Loyalty1():
 
     assert 2_0000 == result
 
+
 def test_Loyalty2():
     result = Loyalty(0, 200_000)
 
     assert 1_0000 == result
+
+
+def test_Loyalty3():
+    result = Loyalty(16_000, 10_000)
+
+    assert 700 == result
